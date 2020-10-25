@@ -15,12 +15,26 @@ def last_digit_of_the_sum_of_fibonacci_numbers_naive(n):
 
     return sum(fibonacci_numbers) % 10
 
+def pisano_cycle(m):
+    # determine the period for mod m
+    F = [0, 1]
+    Fmod = [f % m for f in F]
+    for count in range(1, m**2):
+        F.append(F[-2] + F[-1])
+        Fmod.append(F[-1]%m)
+        if Fmod[-1] == 1 and Fmod[-2] == 0:
+            cycle = Fmod[:-2]
+            break
+    # Get the mod value
+    return cycle
 
 def last_digit_of_the_sum_of_fibonacci_numbers(n):
     assert 0 <= n <= 10 ** 18
-
-    type here
-
+    # Get the last digit of fibonacci number of n + 2
+    cycle = pisano_cycle(10)
+    period = len(cycle)
+    # The last digit of the sum is the last digit of n+2 - 1
+    return (cycle[(n+2) % period] - 1) % 10
 
 if __name__ == '__main__':
     input_n = int(input())

@@ -3,14 +3,14 @@ files:
 - name: last_digit_of_the_sum_of_squares_of_fibonacci_numbers.py
   visible: true
   placeholders:
-  - offset: 510
-    length: 9
+  - offset: 878
+    length: 549
     placeholder_text: type here
     initial_state:
       length: 9
       offset: 510
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
   text: |
     # python3
@@ -98,4 +98,8 @@ files:
   learner_created: false
 feedback_link: https://www.coursera.org/learn/algorithmic-toolbox/programming/b66y2/programming-assignment-1-introduction/discussions
 status: Unchecked
+feedback:
+  message: <html>Local tests passed, please <a href="https://www.coursera.org/learn/algorithmic-toolbox/programming/b66y2/programming-assignment-1-introduction/submission">submit
+    to Coursera</a></html>
+  time: Sun, 25 Oct 2020 08:58:11 UTC
 record: -1

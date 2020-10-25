@@ -3,15 +3,15 @@ files:
 - name: last_digit_of_the_sum_of_fibonacci_numbers.py
   visible: true
   placeholders:
-  - offset: 470
-    length: 9
+  - offset: 383
+    length: 624
     placeholder_text: type here
     initial_state:
       length: 9
       offset: 470
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Failed
   text: |
     # python3
 
@@ -45,14 +45,14 @@ files:
   visible: true
   placeholders:
   - offset: 513
-    length: 9
+    length: 7
     placeholder_text: type here
     initial_state:
       length: 9
       offset: 513
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Failed
   text: |
     import unittest
     from last_digit_of_the_sum_of_fibonacci_numbers import last_digit_of_the_sum_of_fibonacci_numbers, last_digit_of_the_sum_of_fibonacci_numbers_naive
@@ -107,5 +107,9 @@ files:
             passed()
   learner_created: false
 feedback_link: https://www.coursera.org/learn/algorithmic-toolbox/programming/b66y2/programming-assignment-1-introduction/discussions
-status: Unchecked
+status: Failed
+feedback:
+  message: Some unit tests failed. Please fix your code, ensure that all unit tests
+    pass, and try again.
+  time: Sat, 24 Oct 2020 10:07:09 UTC
 record: -1
