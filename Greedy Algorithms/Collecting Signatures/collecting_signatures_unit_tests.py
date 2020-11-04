@@ -7,7 +7,7 @@ class CollectingSignatures(unittest.TestCase):
         for (segments, answer) in [
             ([Segment(1, 3), Segment(2, 5), Segment(3, 6)], 1),
             ([Segment(4, 7), Segment(1, 3), Segment(2, 5), Segment(5, 6)], 2),
-            type here
+
         ]:
             self.assertEqual(len(compute_optimal_points(segments)), answer)
 

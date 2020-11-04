@@ -40,14 +40,14 @@ files:
 - name: collecting_signatures.py
   visible: true
   placeholders:
-  - offset: 158
-    length: 9
+  - offset: 226
+    length: 585
     placeholder_text: type here
     initial_state:
       length: 9
       offset: 158
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
   text: |
     # python3
@@ -73,14 +73,14 @@ files:
 - name: collecting_signatures_unit_tests.py
   visible: true
   placeholders:
-  - offset: 342
-    length: 9
+  - offset: 330
+    length: 0
     placeholder_text: type here
     initial_state:
       length: 9
       offset: 342
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
   text: |
     import unittest
@@ -102,4 +102,8 @@ files:
   learner_created: false
 feedback_link: https://www.coursera.org/learn/algorithmic-toolbox/programming/kAiGl/programming-assignment-2-greedy-algorithms/discussions
 status: Unchecked
+feedback:
+  message: <html>Local tests passed, please <a href="https://www.coursera.org/learn/algorithmic-toolbox/programming/kAiGl/programming-assignment-2-greedy-algorithms/submission">submit
+    to Coursera</a></html>
+  time: Fri, 30 Oct 2020 13:38:21 UTC
 record: -1

@@ -7,13 +7,13 @@ files:
   visible: true
   placeholders:
   - offset: 846
-    length: 9
+    length: 357
     placeholder_text: type here
     initial_state:
       length: 9
       offset: 846
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
   text: |
     # python3
@@ -54,23 +54,23 @@ files:
 - name: maximum_ad_revenue_unit_tests.py
   visible: true
   placeholders:
-  - offset: 443
-    length: 9
+  - offset: 431
+    length: 0
     placeholder_text: type here
     initial_state:
       length: 9
       offset: 443
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
-  - offset: 838
-    length: 9
+  - offset: 809
+    length: 0
     placeholder_text: type here
     initial_state:
       length: 9
       offset: 838
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
   text: |
     import unittest

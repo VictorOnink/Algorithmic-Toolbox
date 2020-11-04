@@ -7,13 +7,13 @@ files:
   visible: true
   placeholders:
   - offset: 74
-    length: 9
+    length: 19
     placeholder_text: type here
     initial_state:
       length: 9
       offset: 74
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
   text: |
     # python3
@@ -82,4 +82,8 @@ files:
   learner_created: false
 feedback_link: https://www.coursera.org/learn/algorithmic-toolbox/programming/kAiGl/programming-assignment-2-greedy-algorithms/discussions
 status: Unchecked
+feedback:
+  message: <html>Local tests passed, please <a href="https://www.coursera.org/learn/algorithmic-toolbox/programming/kAiGl/programming-assignment-2-greedy-algorithms/submission">submit
+    to Coursera</a></html>
+  time: Tue, 27 Oct 2020 08:47:39 UTC
 record: -1

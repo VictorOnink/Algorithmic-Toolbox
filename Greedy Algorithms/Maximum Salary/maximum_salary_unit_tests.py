@@ -8,7 +8,6 @@ class TestLargestNumber(unittest.TestCase):
         for numbers in [
             [1],
             [1, 2],
-            type here
             [1, 12],
             [2, 12],
             [2, 21],

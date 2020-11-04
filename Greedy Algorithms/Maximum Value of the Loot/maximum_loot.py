@@ -3,6 +3,7 @@
 from sys import stdin
 
 
+
 def maximum_loot_value(capacity, weights, prices):
     assert 0 <= capacity <= 2 * 10 ** 6
     assert len(weights) == len(prices)
@@ -10,7 +11,22 @@ def maximum_loot_value(capacity, weights, prices):
     assert all(0 < w <= 2 * 10 ** 6 for w in weights)
     assert all(0 <= p <= 2 * 10 ** 6 for p in prices)
 
-    type here
+    # Determine the value per unit weight
+    value_pound = [p/w for p, w in zip(prices, weights)]
+    total_value = 0
+
+    while capacity > 0 and len(value_pound) > 0:
+        max_index = value_pound.index(max(value_pound))
+        if weights[max_index] <= capacity:
+            capacity -= weights[max_index]
+            total_value += weights[max_index] * value_pound[max_index]
+            del value_pound[max_index]
+            del weights[max_index]
+        else:
+            total_value += value_pound[max_index] * capacity
+            capacity = 0
+
+    return total_value
 
 
 if __name__ == "__main__":
