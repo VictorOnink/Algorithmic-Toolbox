@@ -6,16 +6,16 @@ class PointsAndSegments(unittest.TestCase):
     def test_small(self):
         for starts, ends, points in [
             ([0, 7], [5, 10], [1, 6, 11]),
-            type here
+
         ]:
             self.assertEqual(points_cover(list(starts), list(ends), list(points)),
                              points_cover_naive(starts, ends, points))
 
     def test_random(self):
-        type here
+        pass
 
     def test_large(self):
-        type here
+        pass
 
 
 if __name__ == '__main__':

@@ -6,32 +6,32 @@ files:
 - name: organizing_lottery_unit_tests.py
   visible: true
   placeholders:
-  - offset: 245
-    length: 9
+  - offset: 233
+    length: 0
     placeholder_text: type here
     initial_state:
       length: 9
       offset: 245
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
-  - offset: 456
-    length: 9
+  - offset: 435
+    length: 4
     placeholder_text: type here
     initial_state:
       length: 9
       offset: 456
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
-  - offset: 501
-    length: 9
+  - offset: 475
+    length: 4
     placeholder_text: type here
     initial_state:
       length: 9
       offset: 501
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
   text: |
     import unittest
@@ -89,13 +89,13 @@ files:
   visible: true
   placeholders:
   - offset: 416
-    length: 9
+    length: 97
     placeholder_text: type here
     initial_state:
       length: 9
       offset: 416
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
   text: |
     # python3

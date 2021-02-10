@@ -16,7 +16,32 @@ def points_cover_naive(starts, ends, points):
 
 
 def points_cover(starts, ends, points):
-    type here
+    # first, getting a list containing all the start, end and points coordinates
+    master_list = []
+    for i in range(len(starts)):
+        master_list.append((starts[i], 'L'))
+        master_list.append((ends[i], 'R'))
+    for i in points:
+        master_list.append((int(i), 'P'))
+    master_list.sort()
+
+    # Now, we go through the master list and for each point we come across, we count the number of segments that have
+    # been 'opened' but not yet 'closed'
+    segment_count, count_per_point = 0, dict()
+    for tup in master_list:
+        if tup[1] == 'L':
+            segment_count += 1
+        elif tup[1] == 'R':
+            segment_count -= 1
+        elif tup[1] == 'P':
+            count_per_point[tup[0]] = segment_count
+
+    # Getting then number of segments that each point falls in
+    counts = [0] * len(points)
+    for ind, p in enumerate(points):
+        counts[ind] += count_per_point[p]
+    return counts
+
 
 
 if __name__ == '__main__':

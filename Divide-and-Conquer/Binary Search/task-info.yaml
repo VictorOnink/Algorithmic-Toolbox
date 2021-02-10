@@ -3,24 +3,24 @@ files:
 - name: binary_search_unit_tests.py
   visible: true
   placeholders:
-  - offset: 241
-    length: 9
+  - offset: 229
+    length: 0
     placeholder_text: type here
     initial_state:
       length: 9
       offset: 241
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
-  - offset: 520
-    length: 9
+    selected: true
+    status: Failed
+  - offset: 487
+    length: 0
     placeholder_text: type here
     initial_state:
       length: 9
       offset: 520
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Failed
   text: |
     import unittest
     from binary_search import binary_search, linear_search
@@ -105,15 +105,15 @@ files:
 - name: binary_search.py
   visible: true
   placeholders:
-  - offset: 288
-    length: 9
+  - offset: 262
+    length: 251
     placeholder_text: type here
     initial_state:
       length: 9
       offset: 288
     initialized_from_dependency: false
     selected: true
-    status: Unchecked
+    status: Failed
   text: |
     # python3
 
@@ -141,5 +141,8 @@ files:
             print(binary_search(input_keys, q), end=' ')
   learner_created: false
 feedback_link: https://www.coursera.org/learn/algorithmic-toolbox/programming/w9YDz/programming-assignment-3-divide-and-conquer/discussions
-status: Unchecked
+status: Failed
+feedback:
+  message: Don't just delete task text
+  time: Thu, 12 Nov 2020 14:54:37 UTC
 record: -1

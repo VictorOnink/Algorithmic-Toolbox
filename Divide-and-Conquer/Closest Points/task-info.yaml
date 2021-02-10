@@ -3,14 +3,14 @@ files:
 - name: closest_points.py
   visible: true
   placeholders:
-  - offset: 600
-    length: 9
+  - offset: 1110
+    length: 284
     placeholder_text: type here
     initial_state:
       length: 9
       offset: 600
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
   text: |
     # python3

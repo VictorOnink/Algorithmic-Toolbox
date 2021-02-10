@@ -3,6 +3,70 @@ files:
 - name: logo.png
   visible: false
   learner_created: false
+- name: tests.py
+  visible: false
+  text: |
+    from test_helper import run_common_tests, failed, passed, check_tests_pass
+    from number_of_inversions import compute_inversions, compute_inversions_naive
+    from random import randint
+
+
+    if __name__ == '__main__':
+        run_common_tests()
+        check_tests_pass("number_of_inversions_unit_tests.py")
+
+        all_tests_passed = True
+        for n in (3, 4, 5, 10, 100):
+            for array in (
+                [1] * n,
+                [n - i for i in range(n)],
+                [i for i in range(n)],
+                [randint(0, n) for _ in range(n)]
+            ):
+                if compute_inversions(array) != compute_inversions_naive(array):
+                    all_tests_passed = False
+                    failed("Wrong answer for array={}".format(array))
+                    break
+
+        if all_tests_passed:
+            passed()
+  learner_created: false
+- name: number_of_inversions.py
+  visible: true
+  placeholders:
+  - offset: 1253
+    length: 66
+    placeholder_text: type here
+    initial_state:
+      length: 9
+      offset: 285
+    initialized_from_dependency: false
+    selected: true
+    status: Unchecked
+  text: |
+    # python3
+
+    from itertools import combinations
+
+
+    def compute_inversions_naive(a):
+        number_of_inversions = 0
+        for i, j in combinations(range(len(a)), 2):
+            if a[i] > a[j]:
+                number_of_inversions += 1
+        return number_of_inversions
+
+
+    def compute_inversions(a):
+        type here
+
+
+    if __name__ == '__main__':
+        input_n = int(input())
+        elements = list(map(int, input().split()))
+        assert len(elements) == input_n
+        print(compute_inversions(elements))
+  learner_created: false
 - name: number_of_inversions_unit_tests.py
   visible: true
   placeholders:
@@ -54,70 +118,10 @@ files:
     if __name__ == '__main__':
         unittest.main()
   learner_created: false
-- name: tests.py
-  visible: false
-  text: |
-    from test_helper import run_common_tests, failed, passed, check_tests_pass
-    from number_of_inversions import compute_inversions, compute_inversions_naive
-    from random import randint
-
-
-    if __name__ == '__main__':
-        run_common_tests()
-        check_tests_pass("number_of_inversions_unit_tests.py")
-
-        all_tests_passed = True
-        for n in (3, 4, 5, 10, 100):
-            for array in (
-                [1] * n,
-                [n - i for i in range(n)],
-                [i for i in range(n)],
-                [randint(0, n) for _ in range(n)]
-            ):
-                if compute_inversions(array) != compute_inversions_naive(array):
-                    all_tests_passed = False
-                    failed("Wrong answer for array={}".format(array))
-                    break
-
-        if all_tests_passed:
-            passed()
-  learner_created: false
-- name: number_of_inversions.py
-  visible: true
-  placeholders:
-  - offset: 285
-    length: 9
-    placeholder_text: type here
-    initial_state:
-      length: 9
-      offset: 285
-    initialized_from_dependency: false
-    selected: false
-    status: Unchecked
-  text: |
-    # python3
-
-    from itertools import combinations
-
-
-    def compute_inversions_naive(a):
-        number_of_inversions = 0
-        for i, j in combinations(range(len(a)), 2):
-            if a[i] > a[j]:
-                number_of_inversions += 1
-        return number_of_inversions
-
-
-    def compute_inversions(a):
-        type here
-
-
-    if __name__ == '__main__':
-        input_n = int(input())
-        elements = list(map(int, input().split()))
-        assert len(elements) == input_n
-        print(compute_inversions(elements))
-  learner_created: false
 feedback_link: https://www.coursera.org/learn/algorithmic-toolbox/programming/w9YDz/programming-assignment-3-divide-and-conquer/discussions
 status: Unchecked
+feedback:
+  message: <html>Local tests passed, please <a href="https://www.coursera.org/learn/algorithmic-toolbox/programming/w9YDz/programming-assignment-3-divide-and-conquer/submission">submit
+    to Coursera</a></html>
+  time: Sun, 07 Feb 2021 11:26:38 UTC
 record: -1

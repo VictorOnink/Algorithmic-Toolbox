@@ -21,8 +21,34 @@ def minimum_distance_squared_naive(points):
     return min_distance_squared
 
 
+def brute_force(points):
+    if len(points) is 2:
+        return distance_squared(points[0], points[2])
+    else:
+        min_distance = 1e99
+        for count_1, point_1 in enumerate(points):
+            for count_2, point_2 in enumerate(points[(count_1 + 1):]):
+                dist = distance_squared(point_1, point_2)
+                if dist < min_distance:
+                    min_distance = dist
+        return min_distance
+
+
 def minimum_distance_squared(points):
-    type here
+    # Brute force attack if the number of points is small
+    N = len(points)
+    if N <= 3:
+        return minimum_distance_squared_naive(points)
+
+    mid = N // 2
+    # Check distances for the total point list split in two
+    d_first = minimum_distance_squared(points[:mid])
+    d_last = minimum_distance_squared(points[mid:])
+    d_min = min(d_first, d_last)
+
+
+
+
 
 
 if __name__ == '__main__':

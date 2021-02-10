@@ -9,7 +9,7 @@ class TestMajorityElement(unittest.TestCase):
             [7, 8, 9],
             [2, 3, 2, 3],
             [1, 2, 3, 4],
-            type here
+            [512766168, 717383758, 5, 126144732, 5, 573799007, 5, 5, 5, 405079772]
         ]:
             self.assertEqual(
                 majority_element(list(elements)),
