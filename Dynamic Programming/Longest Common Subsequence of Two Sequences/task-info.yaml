@@ -45,15 +45,15 @@ files:
 - name: lcs2_unit_tests.py
   visible: true
   placeholders:
-  - offset: 426
-    length: 9
+  - offset: 414
+    length: 0
     placeholder_text: type here
     initial_state:
       length: 9
       offset: 426
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Failed
   text: |
     import unittest
     from lcs2 import lcs2
@@ -80,15 +80,15 @@ files:
 - name: lcs2.py
   visible: true
   placeholders:
-  - offset: 137
-    length: 9
+  - offset: 156
+    length: 523
     placeholder_text: type here
     initial_state:
       length: 9
       offset: 137
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Failed
   text: |
     # python3
 
@@ -112,5 +112,8 @@ files:
         print(lcs2(a, b))
   learner_created: false
 feedback_link: https://www.coursera.org/learn/algorithmic-toolbox/programming/ekN4T/programming-assignment-4-dynamic-programming/discussions
-status: Unchecked
+status: Failed
+feedback:
+  message: Don't just delete task text
+  time: Mon, 22 Feb 2021 12:53:33 UTC
 record: -1

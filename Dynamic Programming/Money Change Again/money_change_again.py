@@ -14,7 +14,16 @@ def change_naive(money):
 
 
 def change(money):
-    type here
+    coin_number = [0]
+    coin_values = [1, 3, 4]
+    for value in range(1, money+1):
+        minimum = 1e99
+        for coin in coin_values:
+            if coin <= value:
+                minimum = min(minimum, coin_number[value - coin] + 1)
+        coin_number.append(minimum)
+    return coin_number[-1]
+
 
 
 if __name__ == '__main__':

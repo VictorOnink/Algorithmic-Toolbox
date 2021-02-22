@@ -6,14 +6,14 @@ files:
 - name: money_change_again.py
   visible: true
   placeholders:
-  - offset: 365
-    length: 9
+  - offset: 415
+    length: 251
     placeholder_text: type here
     initial_state:
       length: 9
       offset: 365
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
   text: |
     # python3
@@ -43,13 +43,13 @@ files:
   visible: true
   placeholders:
   - offset: 318
-    length: 9
+    length: 0
     placeholder_text: type here
     initial_state:
       length: 9
       offset: 318
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
   text: |
     import unittest
@@ -95,4 +95,8 @@ files:
   learner_created: false
 feedback_link: https://www.coursera.org/learn/algorithmic-toolbox/programming/ekN4T/programming-assignment-4-dynamic-programming/discussions
 status: Unchecked
+feedback:
+  message: <html>Local tests passed, please <a href="https://www.coursera.org/learn/algorithmic-toolbox/programming/ekN4T/programming-assignment-4-dynamic-programming/submission">submit
+    to Coursera</a></html>
+  time: Mon, 22 Feb 2021 09:18:59 UTC
 record: -1
