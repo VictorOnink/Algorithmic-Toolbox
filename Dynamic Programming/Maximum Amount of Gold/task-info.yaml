@@ -34,7 +34,7 @@ files:
 - name: maximum_gold.py
   visible: true
   placeholders:
-  - offset: 204
+  - offset: 738
     length: 9
     placeholder_text: type here
     initial_state:
